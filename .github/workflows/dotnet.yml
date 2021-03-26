@@ -18,7 +18,7 @@ jobs:
       with:
         dotnet-version: 5.0.x
     - name: Restore dependencies
-      run: cd Elsa.Samples && dotnet restore
+      run: sh -c "Elsa.Samples && dotnet restore"
     - name: Build
       run: dotnet build --no-restore
     - name: Test
