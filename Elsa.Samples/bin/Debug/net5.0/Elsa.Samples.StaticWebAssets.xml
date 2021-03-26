@@ -1,0 +1,4 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="C:\Users\admin\source\repos\Elsa.Samples\Elsa.Samples\obj\Debug\net5.0\scopedcss\bundle\" />
+  <ContentRoot BasePath="_content/Elsa.Dashboard" Path="C:\Users\admin\.nuget\packages\elsa.dashboard\1.5.3.1369\build\..\staticwebassets\" />
+</StaticWebAssets>

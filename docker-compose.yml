@@ -1,0 +1,19 @@
+version: '3.7'
+
+services:
+  elsa.samples:
+    image: ${DOCKER_REGISTRY-}elsasamples
+    build:
+      context: .
+      dockerfile: Elsa.Samples/Dockerfile
+
+  mongodb:
+    image: mongo
+    ports:
+    - "27017:27017"
+
+  smtp4dev:
+    image: rnwood/smtp4dev:linux-amd64-3.1.0-ci0856
+    ports:
+      - "3000:80"
+      - "2525:25"
