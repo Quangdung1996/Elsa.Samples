@@ -19,10 +19,3 @@ jobs:
       run: dotnet build Elsa.Samples.sln -c Release -o out
     - name: Test
       run: dotnet test Elsa.Samples.sln --no-build --verbosity normal
-
-    - uses: actions/checkout@v2
-    - uses: akhileshns/heroku-deploy@v3.12.12 
-       with:
-          heroku_api_key: 4c9cf8ab-4f81-47ba-9978-632084dec73d
-          heroku_app_name: "devtest123321" 
-          heroku_email: "quangdung1996.97@gmail.com"
