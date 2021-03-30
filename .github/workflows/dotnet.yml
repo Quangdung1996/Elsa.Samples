@@ -20,4 +20,4 @@ jobs:
     - name: Build with dotnet
       run: dotnet build Elsa.Samples.sln -c Release -o out
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test Elsa.Samples.sln --no-build --verbosity normal
